@@ -27,3 +27,22 @@ The project is built using the following technologies:
 - Express - A fast and minimalist web framework for Node.js.
 - MongoDB - A document-based NoSQL database.
 - EJS - A template engine for server-side rendering in Node.js.
+
+## Installation
+- Clone the repository to your local machine:
+  - `git clone https://github.com/your-username/assignment.git`
+
+- Navigate to the project directory:
+  - `cd assignment`
+
+- Install the dependencies using npm:
+  - `npm install`
+
+- Create a .env file in the root directory of the project and provide the required environment variables. Here's an example of the variables needed:
+   - `PORT=3000`
+   - `MONGODB_URI=mongodb://localhost:27017/assignment`
+   - `JWT_SECRET=your-secret-key`
+
+- Start the server:
+   - `npm run dev`
+
