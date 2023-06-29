@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Popup Login Form Design | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <input type="checkbox" id="show" />
+      <div class="container">
+        <div class="text">Register Form</div>
+        <p style="color: red"><%= msg %></p>
+        <form action="/register" method="post">
+          <div class="data">
+            <label>Username</label>
+            <input type="text" name="username" />
+          </div>
+          <div class="data">
+            <label>Email</label>
+            <input type="text" name="email" />
+          </div>
+          <div class="data">
+            <label>Password</label>
+            <input type="password" name="password" />
+          </div>
+          <br />
+          <div class="btn">
+            <div class="inner"></div>
+            <button type="submit">Signup</button>
+          </div>
+          <div class="signup-link">
+            Have an account? <a href="/login">Sign in Here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
