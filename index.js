@@ -28,5 +28,8 @@ app.use(cookieParser());
 
 // Routes
 app.use("/", authRoutes);
+app.use("/", (req, res) => {
+    res.json("Project server")
+})
 
 app.listen(port, () => console.log(`Server is listening on ${port}`));
